@@ -28,27 +28,28 @@ int main() {
 
     do{
         system("cls"); // FUNGSI CLEARSCREEN
-        gotoxy(34, 0);
+        cout << "                                        <-------! PUNYA DHANNEYY !-------> :D" << endl;
+        gotoxy(34, 1);
         cout << "+--------------------------------------------+\n"; // INPUT DATA NILAI MAHASISWA
-        gotoxy(35, 1);
-        cout << "Data Nilai Ujian Pemrograman C++\n";
         gotoxy(35, 2);
+        cout << "Data Nilai Ujian Pemrograman C++\n";
+        gotoxy(35, 3);
         cout << "Dosen          : Budiman, S.SI\n";
-        gotoxy(34, 3);
+        gotoxy(34, 4);
         cout << "+--------------------------------------------+\n";
         n++;
         
-        gotoxy(35, 4);
+        gotoxy(35, 5);
         cout << "NPM            : ";
         cin.ignore();
         cin.getline(mhs[n].npm, 9);
-        gotoxy(35, 5);
+        gotoxy(35, 6);
         cout << "Nama           : ";
         cin.getline(mhs[n].nama, 30);
-        gotoxy(35, 6);
+        gotoxy(35, 7);
         cout << "Nilai Mid      : ";
         cin >> mhs[n].nMid;
-        gotoxy(35, 7);
+        gotoxy(35, 8);
         cout << "Nilai Semester : ";
         cin >> mhs[n].nSms;
 
@@ -66,13 +67,13 @@ int main() {
         else
             mhs[n].nHuruf = 'E';
 
-        gotoxy(35, 8);
-        cout << "Nilai Akhir    : " << mhs[n].nAkhir << endl;
         gotoxy(35, 9);
+        cout << "Nilai Akhir    : " << mhs[n].nAkhir << endl;
+        gotoxy(35, 10);
         cout << "Nilai Huruf    : " << mhs[n].nHuruf << endl;
-        gotoxy(34, 10);
+        gotoxy(34, 11);
         cout << "+--------------------------------------------+\n";
-        gotoxy(35, 11);
+        gotoxy(35, 12);
         cout << "Input Lagi [Y/T] : ";
         lg = getch();
     }while (lg == 'Y' || lg == 'y'); 
