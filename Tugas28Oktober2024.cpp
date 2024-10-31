@@ -52,7 +52,7 @@ int main() {
         cout << "Nilai Semester : ";
         cin >> mhs[n].nSms;
 
-        mhs[n].nAkhir = static_cast<int>(0.4 * mhs[n].nMid + 0.6 * mhs[n].nSms); // MENGHITUNG NILAI AKHIR
+        mhs[n].nAkhir = 0.4 * mhs[n].nMid + 0.6 * mhs[n].nSms; // MENGHITUNG NILAI AKHIR
         
         // LOGIKA MENENTUKAN NILAI HURUF A/B/C/D/E
         if (mhs[n].nAkhir >= 80)
