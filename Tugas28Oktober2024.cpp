@@ -27,9 +27,9 @@ int main() {
     int n = 0;
 
     do{
-        system("cls");
+        system("cls"); // FUNGSI CLEARSCREEN
         gotoxy(34, 0);
-        cout << "+--------------------------------------------+\n";
+        cout << "+--------------------------------------------+\n"; // INPUT DATA NILAI MAHASISWA
         gotoxy(35, 1);
         cout << "Data Nilai Ujian Pemrograman C++\n";
         gotoxy(35, 2);
@@ -77,13 +77,13 @@ int main() {
         lg = getch();
     }while (lg == 'Y' || lg == 'y'); 
 
-    system("cls");
+    system("cls"); // FUNGSI CLEARSCREEN
     cout << "\n+-----+----------------------+-------------------------+--------------------+---------------------------+--------------------+\n";
     cout << "| No  | NPM                  | Nama                    | Nilai Mid          | Nilai Semester            | Nilai Akhir       |\n";
     cout << "+-----+----------------------+-------------------------+--------------------+---------------------------+--------------------+\n";
 
-    // Cetak data untuk setiap mahasiswa yang sudah di input
-    for (int i = 1; i <= n; i++) {
+    // OUTPUT DATA NILAI MAHASISWA
+    for (int i = 1; i <= n; i++) { 
         cout << "| " << left << setw(3) << i 
              << " | " << left << setw(20) << mhs[i].npm 
              << " | " << left << setw(23) << mhs[i].nama 
