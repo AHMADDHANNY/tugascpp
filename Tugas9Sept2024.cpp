@@ -13,7 +13,7 @@ int main() {
     cin >> namaPembeli;
     cout << "Masukkan Tipe Rumah (A-D): ";
     cin >> tipeRumah;
-    cout << "Masukkan Jenis Pembayaran (K untuk Kredit, T untuk Tunai): ";
+    cout << "Masukkan Jenis Pembayaran ( (K) untuk Kredit, (T) untuk Tunai): ";
     cin >> jenisPembayaran;
 
     switch (tipeRumah) {
