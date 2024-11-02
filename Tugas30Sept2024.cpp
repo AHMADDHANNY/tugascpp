@@ -17,7 +17,8 @@ int main() {
 	cout << "!------------------------------------------!" << endl << endl;
     do {
     	cout << setprecision(12);
-        cout << "Masukkan Nama Barang ke-" << jumlahBg + 1 << ": ";
+	cout << "Barang ke - " << jumlahBg + 1 << endl;
+        cout << "Masukkan Nama Barang : ";
         cin >> namaBg[jumlahBg];
 
         cout << "Masukkan Harga Barang " << namaBg[jumlahBg] << ": ";
